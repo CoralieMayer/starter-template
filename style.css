@@ -114,11 +114,6 @@ p {
 
 
 
-
-
-
-
-
 /* Hero */
 
 
@@ -157,23 +152,62 @@ p {
 
 /* Hero */
 
-.hero {
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@900&display=swap");
+
+body {
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  background-size: 600%;
-  background-image: var(--gradient);
-  animation: bg-animation 120s infinite alternate;
+  display: grid;
+  background: #f5f5f5;
+  font-family: "Inter", sans-serif;
 }
 
+.hero-blob {
+  background: linear-gradient(to top, #FD0100, #FF657E);
+  width: 120%;
+  min-height: 120vh;
+  box-shadow: 0px 0px 500px darkred;
+  animation: blob 15s linear alternate infinite, 100s alternate infinite;
+  margin-top: 40vh;
+  filter: blur(30px);
+  margin-bottom: -40vh;
+}
 
+/* Frames for the blog */
+/* Fancy CSS Blob Generator https://9elements.github.io/fancy-border-radius/ */
 
+@keyframes blob {
+  0% {
+    border-radius: 71% 29% 41% 59% / 60% 49% 51% 40%;
+  }
+  20% {
+    border-radius: 50% 40% 50% / 40% 50% 40%;
+  }
+  40% {
+    border-radius: 40% 50% 90% / 50% 40% 50%;
+  }
+  60% {
+    border-radius: 30% 70% 70% 30% / 42% 30% 70% 58%;
+  }
+  80% {
+    border-radius: 90% 50% 40% / 50% 40% 50%;
+  }
+  100% {
+    border-radius: 50% 40% 50% / 40% 50% 40%;
+  }
+}
 
+.section {
+  background: blue;
+  min-height: 100vh;
+  width: 100%;
+  z-index: 20;
+  padding: 1em;
+}
 
-
-
-
-
+h1 {
+  font-size: 3em;
+  margin-bottom: 1em;
+}
 
 @keyframes bg-animation {
   0% {
@@ -195,14 +229,12 @@ p {
   text-align: center;
 }
 
-
-
 /* Project Page */
 
 .project-wrapper {
   display: flex;
   justify-content: space-between;
-  background: black;
+  background: white;
   padding: 1em;
 }
 
@@ -212,8 +244,8 @@ p {
   position: -webkit-sticky;
   position: sticky;
   top: 5vh;
-  color: white;
-  background: orangered;
+  color: black;
+  background: white;
   padding: 1em;
 }
 
@@ -229,10 +261,7 @@ p {
 .project-details {
   width: 60vw;
   min-height: 800vh;
-  background-image: linear-gradient(-225deg,
-      #ff057c 0%,
-      #8d0b93 50%,
-      #321575 100%);
+  background: rgb(255, 211, 66);
   padding: 1em;
 }
 
