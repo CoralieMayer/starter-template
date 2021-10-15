@@ -79,6 +79,7 @@ p {
 
 .work-wrapper {
   flex: 1;
+  z-index: 20;
 }
 
 .portfolio {
