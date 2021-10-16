@@ -79,6 +79,9 @@ p {
   color: var(--title-inbetween);
 }
 
+.page-inbetween {
+  background
+}
 
 /* Work Page Layout */
 
@@ -191,11 +194,9 @@ p {
   background: hotpink;
 }
 
-/* Hero */
-
-
-
-
+.header-navigation-item {
+  background: green;
+}
 
 .footer-navigation {
   display: flex;
@@ -273,7 +274,7 @@ h1 {
 
 
 
-
+/* Background animation - delete if not using it */
 @keyframes bg-animation {
   0% {
     background-position: 0%;
@@ -286,22 +287,22 @@ h1 {
 
 
 
-
 /* Project Page */
+
+
+
 
 .project-wrapper {
   display: flex;
   justify-content: space-between;
   background: white;
   padding: 1em;
+  flex-direction: column;
+  /* Column for mobile */
 }
 
 .project-aside {
-  width: 35vw;
-  height: 40vh;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 5vh;
+  width: 100%;
   color: black;
   background: white;
   padding: 1em;
@@ -317,8 +318,7 @@ h1 {
 }
 
 .project-details {
-  width: 60vw;
-  min-height: 800vh;
+  width: 100%;
   background: var(accent-color);
   padding: 1em;
 }
@@ -390,6 +390,26 @@ h1 {
 
   .footer-item {
     flex-direction: column;
+  }
+
+
+  .project-wrapper {
+    flex-direction: row;
+    /* Row for large screens */
+  }
+
+  .project-aside {
+    width: 35vw;
+    height: 40vh;
+    position: sticky;
+    top: 5vh;
+  }
+
+
+  .project-details {
+    width: 60vw;
+    min-height: 800vh;
+    background: var(accent-color);
   }
 
 }
