@@ -165,6 +165,11 @@ p {
   max-width: 20vw;
 }
 
+.social-menu {
+  display: flex;
+  flex-direction: row;
+}
+
 .hero-footer {
   display: flex;
   justify-content: center;
