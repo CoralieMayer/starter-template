@@ -16,7 +16,7 @@ html {
 
 /* Styling Variables */
 :root {
-  --accent-color: #555;
+  --accent-color: rgb(245, 186, 164);
   --body-typeface: "Inter", sans-serif;
   --main-heading: "Inter", sans-serif;
   --text-color: #000000;
@@ -27,11 +27,11 @@ html {
 }
 
 
+/* Global and mobile styles – for large devices scroll to the bottom */
 
 body {
   min-height: 100vh;
-  display: grid;
-  background: var(--page-background-color);
+  background: var(--accent-color);
   color: var(--text-color);
   font-family: var(--body-typeface);
   padding: 1rem;
@@ -80,7 +80,6 @@ p {
 .work-wrapper {
   flex: 1;
   /* z-index: 20; */
-
   display: flex;
   align-items: center;
   justify-content: center;
@@ -101,7 +100,7 @@ p {
   /* vertical */
   justify-content: center;
   /* horizontal */
-  max-width: 65vw;
+  max-width: 90vw;
   min-height: 10vh;
 }
 
@@ -115,7 +114,7 @@ p {
 /* Delete this when all the images are in */
 .project-preview {
   min-height: 100vh;
-  background: rgb(238, 99, 48);
+  background: var(accent-color);
   width: 100vw;
   display: flex;
   align-items: center;
@@ -170,8 +169,11 @@ p {
   padding: 1em;
 }
 
-/* Hero
+/* Hero */
 
+.hero-wrapper {
+  position: relative;
+}
 
 .hero-blob {
   background: linear-gradient(to top, #FD0100, #FF657E);
@@ -182,11 +184,17 @@ p {
   margin-top: 40vh;
   filter: blur(30px);
   margin-bottom: -40vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* opacity: 0.8; */
   z-index: -100;
+  /* for demo purpose  */
+
 }
 
 /* Frames for the blog */
-/* Fancy CSS Blob Generator https://9elements.github.io/fancy-border-radius/ 
+/* Fancy CSS Blob Generator https://9elements.github.io/fancy-border-radius/ */
 
 @keyframes blob {
   0% {
@@ -212,8 +220,7 @@ p {
   100% {
     border-radius: 50% 40% 50% / 40% 50% 40%;
   }
-} 
-*/
+}
 
 
 .section {
@@ -228,6 +235,9 @@ h1 {
   font-size: 3em;
   margin-bottom: 1em;
 }
+
+
+
 
 @keyframes bg-animation {
   0% {
@@ -274,7 +284,7 @@ h1 {
 .project-details {
   width: 60vw;
   min-height: 800vh;
-  background: rgb(255, 211, 66);
+  background: var(accent-color);
   padding: 1em;
 }
 
@@ -286,8 +296,8 @@ h1 {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  background: rgb(238, 174, 174);
-  background: linear-gradient(to top, #FD0100, #FF657E);
+  /* background: rgb(238, 174, 174);
+  background: linear-gradient(to top, #FD0100, #FF657E); */
 
 }
 
@@ -303,16 +313,49 @@ h1 {
   width: 3em;
 }
 
+
 .hero-headline-wrapper {
+  z-index: 100;
   display: flex;
   flex: 1;
   align-items: center;
   justify-content: center;
-  padding: 4em 8em;
+  padding: 2em 4em;
   text-align: center;
   flex-direction: column;
 }
 
 .hero-headline {
   font-size: 3em;
+}
+
+
+
+
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+  body {
+    background: var(--hover-color);
+  }
+
+  .project-navigation-buttons {
+    max-width: 65vw;
+  }
+
+  .hero-headline-wrapper {
+    padding: 4em 8em;
+  }
+
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+
+@media (min-width: 1200px) {
+  body {
+    background: var(--page-background-color);
+  }
+
+
 }
