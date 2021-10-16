@@ -24,6 +24,7 @@ html {
   --hover-color: #ff0000;
   --page-background-color: #ffffff;
   --button-border-color: #000000;
+  --title-inbetween: #02a67b;
 }
 
 
@@ -71,8 +72,12 @@ a:hover {
 
 p {
   margin-bottom: 1em;
+  line-height: 1.2
 }
 
+.title-inbetween {
+  color: var(--title-inbetween);
+}
 
 
 /* Work Page Layout */
