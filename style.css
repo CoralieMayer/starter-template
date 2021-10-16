@@ -170,6 +170,10 @@ p {
   flex-direction: row;
 }
 
+.social-item {
+  padding: .2rem;
+}
+
 .hero-footer {
   display: flex;
   justify-content: center;
