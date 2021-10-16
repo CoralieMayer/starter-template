@@ -54,17 +54,17 @@ h3 {
 }
 
 .hero-headline {
-  color: white;
+  color: black;
 }
 
 /* Hyperlink Styles */
 a {
   text-decoration: none;
-  color: #444;
+  color: black;
 }
 
 a:hover {
-  color: #111;
+  color: black;
 }
 
 p {
@@ -74,7 +74,6 @@ p {
 
 
 /* Work Page Layout */
-
 
 .work-wrapper {
   flex: 1;
@@ -86,7 +85,11 @@ p {
   padding: 1rem;
 }
 
+/* Work page buttons */
+
+
 /* Defining the work page grid */
+
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
@@ -151,8 +154,7 @@ p {
   padding: 1em;
 }
 
-/* Hero */
-
+/* Hero
 
 
 .hero-blob {
@@ -168,7 +170,7 @@ p {
 }
 
 /* Frames for the blog */
-/* Fancy CSS Blob Generator https://9elements.github.io/fancy-border-radius/ */
+/* Fancy CSS Blob Generator https://9elements.github.io/fancy-border-radius/ 
 
 @keyframes blob {
   0% {
@@ -194,7 +196,9 @@ p {
   100% {
     border-radius: 50% 40% 50% / 40% 50% 40%;
   }
-}
+} 
+*/
+
 
 .section {
   background: blue;
