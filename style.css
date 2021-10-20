@@ -195,7 +195,8 @@ p {
 }
 
 .header-navigation-item {
-  background: green;
+  width: 20vw;
+  background: rgb(245, 186, 164; )
 }
 
 .footer-navigation {
