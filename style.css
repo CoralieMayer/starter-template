@@ -24,7 +24,12 @@ html {
   --hover-color: #ff0000;
   --page-background-color: #ffffff;
   --button-border-color: #000000;
+  --title-bloc: #0b00a8;
+  --title-bruit: #df19a3;        
   --title-inbetween: #02a67b;
+  --title-radio: #f71515;
+  --title-viktor: #ffe600; 
+  --title-germination: #f3ca14;  
 }
 
 
@@ -46,7 +51,15 @@ img {
 }
 
 
-/* Typography */
+/* Typography 
+
+████████ ██    ██ ██████   ██████   ██████  ██████   █████  ██████  ██   ██ ██    ██ 
+   ██     ██  ██  ██   ██ ██    ██ ██       ██   ██ ██   ██ ██   ██ ██   ██  ██  ██  
+   ██      ████   ██████  ██    ██ ██   ███ ██████  ███████ ██████  ███████   ████   
+   ██       ██    ██      ██    ██ ██    ██ ██   ██ ██   ██ ██      ██   ██    ██    
+   ██       ██    ██       ██████   ██████  ██   ██ ██   ██ ██      ██   ██    ██    
+                                                                                     
+*/
 
 h1 {
   font-size: 6em;
@@ -54,9 +67,17 @@ h1 {
   margin-bottom: .2em;
 }
 
+h2{}
 
 h3 {
   color: var(--accent-color);
+}
+
+h4 {}
+
+p {
+  margin-bottom: 1em;
+  line-height: 1.2
 }
 
 /* Hyperlink Styles */
@@ -70,17 +91,35 @@ a:hover {
   text-decoration: underline;
 }
 
-p {
-  margin-bottom: 1em;
-  line-height: 1.2
+
+.title-bloc {
+  color: var(--title-bloc);
+  font-size: 3rem;
+}
+.title-bruit {
+  color: var(--title-bruit);
+  font-size: 3rem;
 }
 
 .title-inbetween {
   color: var(--title-inbetween);
+  font-size: 3rem;
 }
 
-.page-inbetween {
-  background
+.title-radio {
+  color: var(--title-radio);
+  font-size: 3rem;
+}
+
+.title-viktor {
+  color: var(--title-viktor);
+  font-size: 3rem;
+}
+
+
+.title-germination {
+  color: var(--title-germination);
+  font-size: 3rem;
 }
 
 /* Work Page Layout */
@@ -130,6 +169,13 @@ p {
 }
 
 
+.section {
+  /* background: blue; */
+  min-height: 100vh;
+  width: 100%;
+  /* z-index: -20; */
+  padding: 1em;
+}
 
 
 /* Defining the work page grid */
@@ -148,14 +194,13 @@ p {
 
 .main-footer {
   min-height: 100vh;
-  background: #f5f5f5;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
   padding: 1rem;
   text-align: center;
   align-items: center;
-  background: url(branding-assets/coralie-mayer-website-footer.svg) no-repeat bottom center;
+  background: url(branding-assets/coralie-logo.svg) no-repeat bottom center;
   background-size: 100%;
 }
 
@@ -205,91 +250,6 @@ p {
   justify-content: space-between;
   padding: 1em;
 }
-
-/* Hero */
-
-.hero-wrapper {
-  position: relative;
-}
-
-.hero-blob {
-  background: linear-gradient(to top, #FD0100, #FF657E);
-  width: 120%;
-  min-height: 120vh;
-  box-shadow: 0px 0px 500px darkred;
-  animation: blob 15s linear alternate infinite, 100s alternate infinite;
-  margin-top: 40vh;
-  filter: blur(30px);
-  margin-bottom: -40vh;
-  position: absolute;
-  top: 0;
-  left: 0;
-  /* opacity: 0.8; */
-  z-index: -100;
-  /* for demo purpose  */
-
-}
-
-/* Frames for the blog */
-/* Fancy CSS Blob Generator https://9elements.github.io/fancy-border-radius/ */
-
-@keyframes blob {
-  0% {
-    border-radius: 71% 29% 41% 59% / 60% 49% 51% 40%;
-  }
-
-  20% {
-    border-radius: 50% 40% 50% / 40% 50% 40%;
-  }
-
-  40% {
-    border-radius: 40% 50% 90% / 50% 40% 50%;
-  }
-
-  60% {
-    border-radius: 30% 70% 70% 30% / 42% 30% 70% 58%;
-  }
-
-  80% {
-    border-radius: 90% 50% 40% / 50% 40% 50%;
-  }
-
-  100% {
-    border-radius: 50% 40% 50% / 40% 50% 40%;
-  }
-}
-
-
-.section {
-  /* background: blue; */
-  min-height: 100vh;
-  width: 100%;
-  /* z-index: -20; */
-  padding: 1em;
-}
-
-h1 {
-  font-size: 3em;
-  margin-bottom: 1em;
-}
-
-
-
-/* Background animation - delete if not using it */
-@keyframes bg-animation {
-  0% {
-    background-position: 0%;
-  }
-
-  100% {
-    background-position: 100%;
-  }
-}
-
-
-
-/* Project Page */
-
 
 
 
@@ -366,6 +326,177 @@ h1 {
 }
 
 
+/* Hero
+
+
+██   ██ ███████ ██████   ██████  
+██   ██ ██      ██   ██ ██    ██ 
+███████ █████   ██████  ██    ██ 
+██   ██ ██      ██   ██ ██    ██ 
+██   ██ ███████ ██   ██  ██████  
+                                 
+                                 
+
+
+*/
+
+.hero-wrapper {
+  position: relative;
+}
+
+
+/*
+
+██████  ██       ██████  ██████  
+██   ██ ██      ██    ██ ██   ██ 
+██████  ██      ██    ██ ██████  
+██   ██ ██      ██    ██ ██   ██ 
+██████  ███████  ██████  ██████  
+                                                               
+*/
+
+
+.hero-blob {
+  background: linear-gradient(to top, #FD0100, #FF657E);
+  width: 120%;
+  min-height: 120vh;
+  box-shadow: 0px 0px 500px darkred;
+  animation: blob 15s linear alternate infinite, 100s alternate infinite;
+  margin-top: 40vh;
+  filter: blur(30px);
+  margin-bottom: -40vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* opacity: 0.8; */
+  z-index: -100;
+  /* for demo purpose  */
+
+}
+
+/* Frames for the blog */
+/* Fancy CSS Blob Generator https://9elements.github.io/fancy-border-radius/ */
+
+@keyframes blob {
+  0% {
+    border-radius: 71% 29% 41% 59% / 60% 49% 51% 40%;
+  }
+
+  20% {
+    border-radius: 50% 40% 50% / 40% 50% 40%;
+  }
+
+  40% {
+    border-radius: 40% 50% 90% / 50% 40% 50%;
+  }
+
+  60% {
+    border-radius: 30% 70% 70% 30% / 42% 30% 70% 58%;
+  }
+
+  80% {
+    border-radius: 90% 50% 40% / 50% 40% 50%;
+  }
+
+  100% {
+    border-radius: 50% 40% 50% / 40% 50% 40%;
+  }
+}
+
+
+
+
+
+/* Project Page
+
+
+██████  ██████   ██████       ██ ███████  ██████ ████████     ██████   █████   ██████  ███████ ███████ 
+██   ██ ██   ██ ██    ██      ██ ██      ██         ██        ██   ██ ██   ██ ██       ██      ██      
+██████  ██████  ██    ██      ██ █████   ██         ██        ██████  ███████ ██   ███ █████   ███████ 
+██      ██   ██ ██    ██ ██   ██ ██      ██         ██        ██      ██   ██ ██    ██ ██           ██ 
+██      ██   ██  ██████   █████  ███████  ██████    ██        ██      ██   ██  ██████  ███████ ███████ 
+                                                                                                       
+                                                                                                      
+*/
+
+
+
+
+
+/*
+
+ █████  ██████   ██████  ██    ██ ████████ 
+██   ██ ██   ██ ██    ██ ██    ██    ██    
+███████ ██████  ██    ██ ██    ██    ██    
+██   ██ ██   ██ ██    ██ ██    ██    ██    
+██   ██ ██████   ██████   ██████     ██    
+                                           
+
+*/
+
+
+/* Page layout */
+.about-container {
+  width: 70vw;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: #f0f8ff;
+}
+
+.about-footer-container {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+}
+
+.about-content,
+.education,
+.experience {
+  margin: 0.5rem;
+  background: #fff;
+  padding: 1rem;
+}
+.education,
+.experience {
+  width: 50%;
+}
+
+/* The effect */
+.photo-container {
+  width: 30vw;
+  min-height: 100vh;
+  position: relative;
+  display: inline-block;
+  background: #f0f8ff;
+  padding: 0.5rem;
+}
+
+.photo-hover {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  padding: 0.5rem;
+}
+
+.photo-container:hover .photo-hover {
+  display: inline-block;
+}
+
+
+/*
+
+
+███    ███ ███████ ██████  ██  █████       ██████  ██    ██ ███████ ██████  ██ ███████ ███████ 
+████  ████ ██      ██   ██ ██ ██   ██     ██    ██ ██    ██ ██      ██   ██ ██ ██      ██      
+██ ████ ██ █████   ██   ██ ██ ███████     ██    ██ ██    ██ █████   ██████  ██ █████   ███████ 
+██  ██  ██ ██      ██   ██ ██ ██   ██     ██ ▄▄ ██ ██    ██ ██      ██   ██ ██ ██           ██ 
+██      ██ ███████ ██████  ██ ██   ██      ██████   ██████  ███████ ██   ██ ██ ███████ ███████ 
+                                              ▀▀                                               
+                                                                                               
+*/
 
 
 
