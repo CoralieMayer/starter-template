@@ -67,7 +67,7 @@ h1 {
   margin-bottom: .2em;
 }
 
-h2{}
+h2{ font-size: 2em;}
 
 h3 {
   color: var(--accent-color);
@@ -539,8 +539,7 @@ a:hover {
 
 
   .project-details {
-    width: 60vw;
-    background: var(--accent-color);
+    width: 65vw;
   }
 
 }
