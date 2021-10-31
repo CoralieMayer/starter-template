@@ -540,8 +540,7 @@ a:hover {
 
   .project-details {
     width: 60vw;
-    min-height: 800vh;
-    background: var(accent-color);
+    background: var(--accent-color);
   }
 
 }
