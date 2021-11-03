@@ -40,7 +40,6 @@ body {
   background: var(--accent-color);
   color: var(--text-color);
   font-family: var(--body-typeface);
-  padding: 1rem;
 }
 
 
@@ -197,7 +196,6 @@ a:hover {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-  padding: 1rem;
   text-align: center;
   align-items: center;
   background: url(branding-assets/coralie-mayer-branding-gradient-orb.png) no-repeat bottom center;
@@ -241,7 +239,7 @@ a:hover {
 
 .header-navigation-item {
   width: 20vw;
-  background: rgb(245, 186, 164; )
+  background: rgb(245, 186, 164);
 }
 
 .footer-navigation {
