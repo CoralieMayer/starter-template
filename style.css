@@ -25,11 +25,11 @@ html {
   --page-background-color: #ffffff;
   --button-border-color: #000000;
   --title-bloc: #0b00a8;
-  --title-bruit: #df19a3;        
+  --title-bruit: #df19a3;
   --title-inbetween: #02a67b;
   --title-radio: #f71515;
-  --title-viktor: #ffe600; 
-  --title-germination: #f3ca14;  
+  --title-viktor: #ffe600;
+  --title-germination: #f3ca14;
 }
 
 
@@ -66,7 +66,9 @@ h1 {
   margin-bottom: .2em;
 }
 
-h2{ font-size: 2em;}
+h2 {
+  font-size: 2em;
+}
 
 h3 {
   color: var(--accent-color);
@@ -95,6 +97,7 @@ a:hover {
   color: var(--title-bloc);
   font-size: 3rem;
 }
+
 .title-bruit {
   color: var(--title-bruit);
   font-size: 3rem;
@@ -209,8 +212,25 @@ a:hover {
   padding: 1rem;
   text-align: center;
   align-items: center;
-  background: rgba(245, 186, 164,0.2)
+  background: rgba(245, 186, 164, 0.2)
 }
+
+.global-footer-branding {
+  width: 30vw;
+}
+
+.global-footer-bio {
+  width: 30vw;
+  margin-right: 20vw;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.global-footer-social {
+  width: 20vw;
+}
+
+
 
 .footer-branding {
   max-width: 20vw;
@@ -455,6 +475,7 @@ a:hover {
   background: #fff;
   padding: 1rem;
 }
+
 .education,
 .experience {
   width: 50%;
