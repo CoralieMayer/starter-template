@@ -81,6 +81,11 @@ p {
   line-height: 1.2
 }
 
+p:last-child,
+.last-paragraph {
+  margin-bottom: 0;
+}
+
 /* Hyperlink Styles */
 a {
   text-decoration: none;
@@ -228,6 +233,7 @@ a:hover {
 
 .global-footer-social {
   width: 20vw;
+  align-items: flex-start;
 }
 
 
@@ -239,6 +245,7 @@ a:hover {
 .social-menu {
   display: flex;
   flex-direction: row;
+  margin-bottom: .475rem;
 }
 
 .social-item {
