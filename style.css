@@ -199,8 +199,24 @@ a:hover {
   color: white;
 }
 
+
+/* Global and Mobile Footer Styles */
+
+.brand-icon-wrapper {
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.brand-icon {
+  width: 30vw;
+
+}
+
 .main-footer {
-  min-height: 100vh;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
@@ -212,35 +228,31 @@ a:hover {
 
 .footer-item {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   flex-direction: column;
   padding: 1rem;
   text-align: center;
   align-items: center;
-  background: rgba(245, 186, 164, 0.2)
 }
 
 .global-footer-branding {
-  width: 40vw;
+  width: 100vw;
+
 }
 
 .global-footer-bio {
-  width: 30vw;
-  margin-right: 10vw;
+  width: 100vw;
   align-items: flex-start;
   text-align: left;
+  padding: 2rem;
 }
 
 .global-footer-social {
-  width: 20vw;
-  align-items: flex-start;
+  width: 100vw;
+  align-items: center;
+  justify-content: flex-end;
 }
 
-
-
-/* .footer-branding {
-  max-width: 20vw;
-} */
 
 .social-menu {
   display: flex;
@@ -252,6 +264,9 @@ a:hover {
   padding: .2rem;
 }
 
+
+
+/* Hero Styles */
 .hero-footer {
   display: flex;
   justify-content: center;
@@ -276,7 +291,7 @@ a:hover {
   padding: 1em;
 }
 
-
+/* Main Project Area */
 
 .project-wrapper {
   display: flex;
@@ -369,6 +384,10 @@ a:hover {
   position: relative;
 }
 
+
+.down-arrow {
+  margin-top: 20vh;
+}
 
 /*
 
@@ -541,14 +560,7 @@ a:hover {
     padding: 4em 8em;
   }
 
-  .main-footer {
-    flex-direction: row;
-    align-items: flex-end;
-  }
 
-  .footer-item {
-    flex-direction: column;
-  }
 
 
   .project-wrapper {
@@ -567,6 +579,101 @@ a:hover {
   .project-details {
     width: 65vw;
   }
+
+
+
+
+  /* Global Footer */
+
+
+
+  .hero-footer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .hero-image {
+    background: hotpink;
+  }
+
+  .header-navigation-item {
+    width: 20vw;
+
+  }
+
+  .footer-navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1em;
+  }
+
+  /* Global Footer Styles on large devices */
+  .brand-icon-wrapper {
+    width: 100%;
+    height: 50vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: -40vh;
+  }
+
+  .brand-icon {
+    width: 30vw;
+
+  }
+
+
+
+
+  .main-footer {
+    align-items: flex-end;
+    min-height: 80vh;
+    justify-content: space-between;
+    flex-direction: row;
+    text-align: center;
+
+  }
+
+  .footer-item {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    height: 25vh;
+  }
+
+  .global-footer-branding {
+    width: 30vw;
+  }
+
+  .global-footer-bio {
+    width: 30vw;
+    margin-right: 20vw;
+    align-items: flex-start;
+    text-align: left;
+    padding: 0;
+  }
+
+  .global-footer-social {
+    width: 20vw;
+    align-items: flex-start;
+    justify-content: flex-end;
+  }
+
+
+  .social-menu {
+    flex-direction: row;
+  }
+
+
+
+
+
 
 }
 
