@@ -221,12 +221,12 @@ a:hover {
 }
 
 .global-footer-branding {
-  width: 30vw;
+  width: 40vw;
 }
 
 .global-footer-bio {
   width: 30vw;
-  margin-right: 20vw;
+  margin-right: 10vw;
   align-items: flex-start;
   text-align: left;
 }
@@ -238,9 +238,9 @@ a:hover {
 
 
 
-.footer-branding {
+/* .footer-branding {
   max-width: 20vw;
-}
+} */
 
 .social-menu {
   display: flex;
