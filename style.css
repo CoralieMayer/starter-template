@@ -69,7 +69,8 @@ h1 {
 }
 
 h2 {
-  font-size: 2em;
+  font-size: 1.275em;
+  margin-bottom: .5em;
 }
 
 h3 {
@@ -83,7 +84,6 @@ p {
   line-height: 1.2
 }
 
-p:last-child,
 .last-paragraph {
   margin-bottom: 0;
 }
@@ -140,6 +140,7 @@ a:hover {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  width: 100%;
 
 }
 
@@ -171,7 +172,7 @@ a:hover {
 .project-preview {
   min-height: 100vh;
   background: red;
-  max-width: 100%;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -217,6 +218,7 @@ a:hover {
   align-items: center;
   background: url(branding-assets/coralie-mayer-branding-gradient-orb.png) no-repeat bottom center;
   background-size: 100%;
+  width: 100%;
 }
 
 .footer-item {
@@ -229,19 +231,18 @@ a:hover {
 }
 
 .global-footer-branding {
-  width: 100vw;
+  width: 100%;
 
 }
-
 .global-footer-bio {
-  width: 100vw;
+  width: 100%;
   align-items: flex-start;
   text-align: left;
   padding: 2rem;
 }
 
 .global-footer-social {
-  width: 100vw;
+  width: 100%;
   align-items: center;
   justify-content: flex-end;
 }
@@ -273,8 +274,10 @@ a:hover {
 }
 
 .header-navigation-item {
-  width: 20vw;
-  background: rgb(245, 186, 164);
+  width: 10vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .footer-navigation {
@@ -592,7 +595,7 @@ a:hover {
   }
 
   .header-navigation-item {
-    width: 20vw;
+    width: 10vw;
 
   }
 
