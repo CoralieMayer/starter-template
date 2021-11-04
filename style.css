@@ -480,8 +480,11 @@ a:hover {
 
 
 /* Page layout */
-.about-container {
-  width: 70vw;
+
+.about-wrapper {display: flex; flex-direction: row; background: yellow; width: 100%;}
+
+.about-content-container {
+  width: 60%;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -497,7 +500,6 @@ a:hover {
 .about-content,
 .education,
 .experience {
-  margin: 0.5rem;
   background: #fff;
   padding: 1rem;
 }
@@ -508,12 +510,12 @@ a:hover {
 }
 
 /* The effect */
-.photo-container {
-  width: 30vw;
+.about-photo-container {
+  width: 40%;
   min-height: 100vh;
   position: relative;
   display: inline-block;
-  background: #f0f8ff;
+  background: hotpink;;
   padding: 0.5rem;
 }
 
@@ -526,7 +528,7 @@ a:hover {
   padding: 0.5rem;
 }
 
-.photo-container:hover .photo-hover {
+.about-photo-container:hover .photo-hover {
   display: inline-block;
 }
 
