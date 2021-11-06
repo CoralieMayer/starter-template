@@ -4,12 +4,12 @@
 
 @font-face {
     font-family: 'freighttextfreighttextproBkIt';
-    src: url('freighttextprobook-italic-webfont.eot');
-    src: url('freighttextprobook-italic-webfont.eot?#iefix') format('embedded-opentype'),
-         url('freighttextprobook-italic-webfont.woff2') format('woff2'),
-         url('freighttextprobook-italic-webfont.woff') format('woff'),
-         url('freighttextprobook-italic-webfont.ttf') format('truetype'),
-         url('freighttextprobook-italic-webfont.svg#freighttextfreighttextproBkIt') format('svg');
+    src: url('_freight-text-font/freighttextprobook-italic-webfont.eot');
+    src: url('_freight-text-font/freighttextprobook-italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('_freight-text-font/freighttextprobook-italic-webfont.woff2') format('woff2'),
+         url('_freight-text-font/freighttextprobook-italic-webfont.woff') format('woff'),
+         url('_freight-text-font/freighttextprobook-italic-webfont.ttf') format('truetype'),
+         url('_freight-text-font/freighttextprobook-italic-webfont.svg#freighttextfreighttextproBkIt') format('svg');
     font-weight: normal;
     font-style: normal;
 
@@ -20,12 +20,12 @@
 
 @font-face {
     font-family: 'freighttextprfreighttextproBk';
-    src: url('freighttextprobook-regular-webfont.eot');
-    src: url('freighttextprobook-regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('freighttextprobook-regular-webfont.woff2') format('woff2'),
-         url('freighttextprobook-regular-webfont.woff') format('woff'),
-         url('freighttextprobook-regular-webfont.ttf') format('truetype'),
-         url('freighttextprobook-regular-webfont.svg#freighttextprfreighttextproBk') format('svg');
+    src: url('_freight-text-font/freighttextprobook-regular-webfont.eot');
+    src: url('_freight-text-font/freighttextprobook-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('_freight-text-font/freighttextprobook-regular-webfont.woff2') format('woff2'),
+         url('_freight-text-font/freighttextprobook-regular-webfont.woff') format('woff'),
+         url('_freight-text-font/freighttextprobook-regular-webfont.ttf') format('truetype'),
+         url('_freight-text-font/freighttextprobook-regular-webfont.svg#freighttextprfreighttextproBk') format('svg');
     font-weight: normal;
     font-style: normal;
 
@@ -36,12 +36,12 @@
 
 @font-face {
     font-family: 'freighttextfreighttextproLtIt';
-    src: url('freighttextprolight-italic-webfont.eot');
-    src: url('freighttextprolight-italic-webfont.eot?#iefix') format('embedded-opentype'),
-         url('freighttextprolight-italic-webfont.woff2') format('woff2'),
-         url('freighttextprolight-italic-webfont.woff') format('woff'),
-         url('freighttextprolight-italic-webfont.ttf') format('truetype'),
-         url('freighttextprolight-italic-webfont.svg#freighttextfreighttextproLtIt') format('svg');
+    src: url('_freight-text-font/freighttextprolight-italic-webfont.eot');
+    src: url('_freight-text-font/freighttextprolight-italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('_freight-text-font/freighttextprolight-italic-webfont.woff2') format('woff2'),
+         url('_freight-text-font/freighttextprolight-italic-webfont.woff') format('woff'),
+         url('_freight-text-font/freighttextprolight-italic-webfont.ttf') format('truetype'),
+         url('_freight-text-font/freighttextprolight-italic-webfont.svg#freighttextfreighttextproLtIt') format('svg');
     font-weight: normal;
     font-style: normal;
 
@@ -52,12 +52,12 @@
 
 @font-face {
     font-family: 'freighttextprfreighttextproLt';
-    src: url('freighttextprolight-regular-webfont.eot');
-    src: url('freighttextprolight-regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('freighttextprolight-regular-webfont.woff2') format('woff2'),
-         url('freighttextprolight-regular-webfont.woff') format('woff'),
-         url('freighttextprolight-regular-webfont.ttf') format('truetype'),
-         url('freighttextprolight-regular-webfont.svg#freighttextprfreighttextproLt') format('svg');
+    src: url('_freight-text-font/freighttextprolight-regular-webfont.eot');
+    src: url('_freight-text-font/freighttextprolight-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('_freight-text-font/freighttextprolight-regular-webfont.woff2') format('woff2'),
+         url('_freight-text-font/freighttextprolight-regular-webfont.woff') format('woff'),
+         url('_freight-text-font/freighttextprolight-regular-webfont.ttf') format('truetype'),
+         url('_freight-text-font/freighttextprolight-regular-webfont.svg#freighttextprfreighttextproLt') format('svg');
     font-weight: normal;
     font-style: normal;
 
@@ -68,12 +68,12 @@
 
 @font-face {
     font-family: 'freighttextfreighttextproMdIt';
-    src: url('freighttextpromedium-italic-webfont.eot');
-    src: url('freighttextpromedium-italic-webfont.eot?#iefix') format('embedded-opentype'),
-         url('freighttextpromedium-italic-webfont.woff2') format('woff2'),
-         url('freighttextpromedium-italic-webfont.woff') format('woff'),
-         url('freighttextpromedium-italic-webfont.ttf') format('truetype'),
-         url('freighttextpromedium-italic-webfont.svg#freighttextfreighttextproMdIt') format('svg');
+    src: url('_freight-text-font/freighttextpromedium-italic-webfont.eot');
+    src: url('_freight-text-font/freighttextpromedium-italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('_freight-text-font/freighttextpromedium-italic-webfont.woff2') format('woff2'),
+         url('_freight-text-font/freighttextpromedium-italic-webfont.woff') format('woff'),
+         url('_freight-text-font/freighttextpromedium-italic-webfont.ttf') format('truetype'),
+         url('_freight-text-font/freighttextpromedium-italic-webfont.svg#freighttextfreighttextproMdIt') format('svg');
     font-weight: normal;
     font-style: normal;
 
@@ -84,12 +84,12 @@
 
 @font-face {
     font-family: 'freighttextprfreighttextproMd';
-    src: url('freighttextpromedium-regular-webfont.eot');
-    src: url('freighttextpromedium-regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('freighttextpromedium-regular-webfont.woff2') format('woff2'),
-         url('freighttextpromedium-regular-webfont.woff') format('woff'),
-         url('freighttextpromedium-regular-webfont.ttf') format('truetype'),
-         url('freighttextpromedium-regular-webfont.svg#freighttextprfreighttextproMd') format('svg');
+    src: url('_freight-text-font/freighttextpromedium-regular-webfont.eot');
+    src: url('_freight-text-font/freighttextpromedium-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('_freight-text-font/freighttextpromedium-regular-webfont.woff2') format('woff2'),
+         url('_freight-text-font/freighttextpromedium-regular-webfont.woff') format('woff'),
+         url('_freight-text-font/freighttextpromedium-regular-webfont.ttf') format('truetype'),
+         url('_freight-text-font/freighttextpromedium-regular-webfont.svg#freighttextprfreighttextproMd') format('svg');
     font-weight: normal;
     font-style: normal;
 
@@ -100,12 +100,12 @@
 
 @font-face {
     font-family: 'freighttexfreighttextproSBdIt';
-    src: url('freighttextprosemibold-italic-webfont.eot');
-    src: url('freighttextprosemibold-italic-webfont.eot?#iefix') format('embedded-opentype'),
-         url('freighttextprosemibold-italic-webfont.woff2') format('woff2'),
-         url('freighttextprosemibold-italic-webfont.woff') format('woff'),
-         url('freighttextprosemibold-italic-webfont.ttf') format('truetype'),
-         url('freighttextprosemibold-italic-webfont.svg#freighttexfreighttextproSBdIt') format('svg');
+    src: url('_freight-text-font/freighttextprosemibold-italic-webfont.eot');
+    src: url('_freight-text-font/freighttextprosemibold-italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('_freight-text-font/freighttextprosemibold-italic-webfont.woff2') format('woff2'),
+         url('_freight-text-font/freighttextprosemibold-italic-webfont.woff') format('woff'),
+         url('_freight-text-font/reighttextprosemibold-italic-webfont.ttf') format('truetype'),
+         url('_freight-text-font/freighttextprosemibold-italic-webfont.svg#freighttexfreighttextproSBdIt') format('svg');
     font-weight: normal;
     font-style: normal;
 
@@ -116,12 +116,12 @@
 
 @font-face {
     font-family: 'freighttextpfreighttextproSBd';
-    src: url('freighttextprosemibold-regular-webfont.eot');
-    src: url('freighttextprosemibold-regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('freighttextprosemibold-regular-webfont.woff2') format('woff2'),
-         url('freighttextprosemibold-regular-webfont.woff') format('woff'),
-         url('freighttextprosemibold-regular-webfont.ttf') format('truetype'),
-         url('freighttextprosemibold-regular-webfont.svg#freighttextpfreighttextproSBd') format('svg');
+    src: url('_freight-text-font/freighttextprosemibold-regular-webfont.eot');
+    src: url('_freight-text-font/freighttextprosemibold-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('_freight-text-font/freighttextprosemibold-regular-webfont.woff2') format('woff2'),
+         url('_freight-text-font/freighttextprosemibold-regular-webfont.woff') format('woff'),
+         url('_freight-text-font/freighttextprosemibold-regular-webfont.ttf') format('truetype'),
+         url('_freight-text-font/freighttextprosemibold-regular-webfont.svg#freighttextpfreighttextproSBd') format('svg');
     font-weight: normal;
     font-style: normal;
 
