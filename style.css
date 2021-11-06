@@ -508,7 +508,6 @@ background: black;
   width: 100%;
   display: flex;
   flex-direction: column;
-  background: #f0f8ff;
   padding: 1rem;
 }
 .about-footer-container {
@@ -527,6 +526,7 @@ background: black;
 .about-subheading {
   border-bottom: 1px solid black;
   padding-bottom: .225rem;
+
 }
 .about-details {
   margin-top: 2rem;
@@ -535,11 +535,14 @@ background: black;
 .experience {
   width: 100%;
 }
+
+.employment-position {margin-bottom: .5rem;}
 .education {
   margin-right: 3rem;
 }
 .awards-recognition {
 margin-top: 4.5rem;
+padding: 1rem;
 }
 .awards-navigation-buttons {
   display: flex;
@@ -548,9 +551,10 @@ margin-top: 4.5rem;
   /* vertical */
   justify-content: flex-start;
   /* horizontal */
-  max-width: 90vw;
+  max-width: 100%;
   min-height: 10vh;
 }
+
 
 /* The effect */
 .about-photo-container {
@@ -728,6 +732,7 @@ display: none;
   display: inline-block;
   padding: 0.5rem;
 }
+
 .photo-hover {
   display: none;
   position: absolute;
