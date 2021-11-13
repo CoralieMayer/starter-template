@@ -21,7 +21,7 @@ html {
   --accent-color: rgb(245, 186, 164);
   --body-typeface:'vremena_groteskbook'; 
   --alternate-text:'freighttextfreighttextproBkIt';
-  --main-heading: "Inter", sans-serif;
+  --main-heading: 'vremena_groteskbook';
   --text-color: #000000;
   --link-color: #222222;
   --hover-color: #ff0000;
@@ -66,10 +66,10 @@ img {
 */
 
 h1 {
-  font-size: 6em;
-  /* font-family: var(--main-heading); */
-  font-family: freight-text;
+  font-family: var(--main-heading);
+  font-size: 3em;
   margin-bottom: .2em;
+  line-height: 1.15em;
 }
 
 h2 {
