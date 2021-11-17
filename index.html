@@ -4,20 +4,24 @@
 <head>
   <meta charset="UTF-8">
   <title>Coralie Mayer Digital Designer and Fine Artist</title>
-  <meta name="description" content="Coralie Mayer is a digital designer, art director, illustrator and fine artist based in Vancouver, Canada. She is a graduate of the IDEA School of Design at Capilano University. She has worked with Hangar 18 Design Continuum, ML Emporio Properties, BC Womens’ Hospital, Belford Properties and various print and web publications.">
+  <meta name="description"
+    content="Coralie Mayer is a digital designer, art director, illustrator and fine artist based in Vancouver, Canada. She is a graduate of the IDEA School of Design at Capilano University. She has worked with Hangar 18 Design Continuum, ML Emporio Properties, BC Womens’ Hospital, Belford Properties and various print and web publications.">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
   <script src="https://kit.fontawesome.com/d300c2ea15.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="./style.css">
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-7JWQZ5XFG6"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-7JWQZ5XFG6"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
 
-  gtag('config', 'G-7JWQZ5XFG6');
-</script>
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'G-7JWQZ5XFG6');
+  </script>
 </head>
 
 <body>
@@ -25,11 +29,16 @@
 
     <header class="hero-header">
       <ul class="branding-navigation">
-        <li class="header-navigation-item"><a href="index.html">Work</a></li>
         <li class="header-navigation-item logo"><a href="index.html"><img src="branding-assets/coralie-logo.svg"
               alt="Coralie Mayer" /></a>
         </li>
-        <li class="header-navigation-item"><a href="about.html">About</a></li>
+        <li class="header-navigation-item menu">
+          <ul class="header-menu-wrapper">
+            <li class="header-menu-item"><a href="about.html">About</a></li>
+            <li class="header-menu-item"><a href="#contact-section">Contact</a></li>
+            <li class="header-menu-item"><a href="index.html">Work</a></li>
+          </ul>
+        </li>
       </ul>
     </header>
     <div class="hero-wrapper">
@@ -37,7 +46,8 @@
       <div class="hero-headline-wrapper">
         <h1 class="hero-headline"><img src="branding-assets/coralie-mayer.svg">
         </h1>
-        <div class="down-arrow"><a href="#work-section"><img src="branding-assets/coralie-mayer-branding-down-arrow.svg"></a></div>
+        <div class="down-arrow"><a href="#work-section"><img
+              src="branding-assets/coralie-mayer-branding-down-arrow.svg"></a></div>
       </div>
 
     </div>
@@ -57,11 +67,12 @@
     <ul class="project-navigation-buttons">
       <li class="navigation-button"><a href="bloc.html" class="navigation-button-link">bloc</a></li>
       <li class="navigation-button"><a href="inbetween.html" class="navigation-button-link">inbetween</a></li>
-      <li class="navigation-button"><a href="radio-radical-reforms.html" class="navigation-button-link">radio radical reform</a></li>
+      <li class="navigation-button"><a href="radio-radical-reforms.html" class="navigation-button-link">radio radical
+          reform</a></li>
       <li class="navigation-button"><a href="germination.html" class="navigation-button-link">germination</a></li>
       <li class="navigation-button"><a href="viktor.html" class="navigation-button-link">viktor</a></li>
       <li class="navigation-button"><a href="bruit.html" class="navigation-button-link">bruit music festival</a></li>
-      <li class="navigation-button"><a href="fine-art.html" class="navigation-button-link">fine art</a></li>      
+      <li class="navigation-button"><a href="fine-art.html" class="navigation-button-link">fine art</a></li>
 
     </ul>
     <section id="preview-bloc" class="project-preview">
@@ -85,7 +96,7 @@
           <img src="bloc/coralie-mayer-bloc-branding.png" width="1600" height="1200" alt="Bloc">
         </figure>
       </a>
-    
+
     </section>
     <section id="preview-viktor" class="project-preview">
       <a href="viktor.html">
@@ -102,8 +113,8 @@
       </a>
     </section>
   </main>
-  <div class="brand-icon-wrapper"><a href="#top"><img src="branding-assets/coralie-logo.svg" alt="Coralie Mayer"
-        class="brand-icon" /></a></div>
+  <div class="brand-icon-wrapper" id="contact-section"><a href="#top"><img src="branding-assets/coralie-logo.svg"
+        alt="Coralie Mayer" class="brand-icon" /></a></div>
   <ul class="main-footer">
     <li class="footer-item global-footer-branding">
       <figure><img src="branding-assets/coralie-mayer-footer-logo.svg"></figure>
