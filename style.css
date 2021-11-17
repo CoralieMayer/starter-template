@@ -21,7 +21,7 @@ html {
   --accent-color: rgb(245, 186, 164);
   --body-typeface:'vremena_groteskbook'; 
   --alternate-text:'freighttextfreighttextproBkIt';
-  --main-heading: 'vremena_groteskbook';
+  --main-heading: 'vremena_groteskbook'; 
   --text-color: #000000;
   --link-color: #222222;
   --hover-color: #ff0000;
@@ -118,27 +118,27 @@ a:hover {
 
 .title-bloc {
   color: var(--title-bloc);
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
 
 .title-bruit {
   color: var(--title-bruit);
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
 
 .title-inbetween {
   color: var(--title-inbetween);
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
 
 .title-radio {
   color: var(--title-radio);
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
 
 .title-viktor {
   color: var(--title-viktor);
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
 
 
@@ -149,6 +149,10 @@ a:hover {
 
 /* Work Page Layout */
 
+.work-section {
+  background-color: #ffffff;
+}
+
 .work-wrapper {
   flex: 1;
   /* z-index: 20; */
@@ -157,6 +161,7 @@ a:hover {
   justify-content: center;
   flex-direction: column;
   width: 100%;
+  background-color: #ffffff;
 
 }
 
@@ -179,12 +184,13 @@ a:hover {
 }
 .navigation-button {
   margin: 1rem .2rem;
+  text-transform: uppercase;
+  font-size: 1.3rem;
 }
 .navigation-button-link {
-  border: 2px solid var(--button-border-color);
+  border: 1.2px solid var(--button-border-color);
   border-radius: 2em;
-  padding: .5rem 1rem;
-  margin: .2rem;
+  padding: 0rem .7rem;
 }
 .navigation-button-link:hover {
   color: white; text-decoration: none;
@@ -195,7 +201,7 @@ background: black;
 /* Delete this when all the images are in */
 .project-preview {
   min-height: 100vh;
-  background: red;
+  background: white;
   width: 100%;
   display: flex;
   align-items: center;
@@ -403,6 +409,7 @@ background: black;
 
 .hero-wrapper {
   position: relative;
+  
 }
 
 
@@ -422,17 +429,18 @@ background: black;
 
 
 .hero-blob {
-  background: linear-gradient(to top, #FD0100, #FF657E);
+  background: linear-gradient(to right, #FC6387, #FD0100, #FC6387, #FDC7CF);
   width: 100%;
   min-height: 120vh;
-  box-shadow: 0px 0px 500px darkred;
+  /* box-shadow: 0px 0px 500px darkred; */
   animation: blob 15s linear alternate infinite, 100s alternate infinite;
-  margin-top: 40vh;
-  filter: blur(30px);
-  margin-bottom: -40vh;
+  margin-top: 5vh;
+  filter: blur(90px);
+  margin-bottom: -60vh;
   position: absolute;
   top: 0;
   left: 0;
+  transform: scaleY(.7);
   /* opacity: 0.8; */
   z-index: -100;
   /* for demo purpose  */
@@ -442,7 +450,7 @@ background: black;
 /* Frames for the blog */
 /* Fancy CSS Blob Generator https://9elements.github.io/fancy-border-radius/ */
 
-@keyframes blob {
+/* @keyframes blob {
   0% {
     border-radius: 71% 29% 41% 59% / 60% 49% 51% 40%;
   }
@@ -465,6 +473,27 @@ background: black;
 
   100% {
     border-radius: 50% 40% 50% / 40% 50% 40%;
+  }
+} */
+
+@keyframes blob {
+  0% {
+    border-radius: 46% 48% 0% 0% / 86% 83% 0% 0%;
+  }
+  20% {
+    border-radius: 50% 50% 0% 0% / 56% 52% 0% 0%;
+  }
+  40% {
+    border-radius: 50% 50% 0% 0% / 53% 56% 0% 0%;
+  }
+  60% {
+    border-radius: 54% 52% 0% 0% / 50% 56% 0% 0%;
+  }
+  80% {
+    border-radius: 49% 51% 0% 0% / 51% 54% 0% 0%;
+  }
+  100% {
+    border-radius: 50% 52% 0% 0% / 59% 59% 0% 0%;
   }
 }
 
