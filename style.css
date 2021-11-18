@@ -72,7 +72,8 @@ h1 {
 }
 
 h2 {
-  font-size: 1.275em;
+  font-family: 'freighttextfreighttextproLtIt';
+  font-size: 2.25em;
   margin-bottom: .5em;
 }
 
@@ -97,9 +98,9 @@ p {
 }
 
 .about-bio {
-  font-size: 1.875rem;
+  font-size: 1.5rem;
   line-height: 1.3;
-  font-family: 'vremena_groteskbook';
+  font-family: var(--main-heading);
   padding-right: 1rem;
 }
 
@@ -179,7 +180,6 @@ a:hover {
   /* horizontal */
   max-width: 90vw;
   min-height: 10vh;
-  background: pink;
 }
 
 .navigation-button {
@@ -318,7 +318,7 @@ a:hover {
 }
 
 .header-menu-item {
-  padding: .225rem;
+  padding: .325rem;
 }
 
 .footer-navigation {
@@ -373,7 +373,7 @@ a:hover {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  padding: 2rem;
+  padding: 1rem;
   /* This is the padding of the entire hero section */
   width: 100%;
 
@@ -659,13 +659,21 @@ a:hover {
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-
+  
+  .hero {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    /* This is the padding of the entire hero section */
+    width: 100%;
   body {
     background: var(--hover-color);
   }
 
   .project-navigation-buttons {
     max-width: 65vw;
+    
   }
 
   .hero-headline-wrapper {
@@ -799,6 +807,10 @@ a:hover {
 
   .about-bio {
     padding-right: 5rem;
+    font-size: 1.875rem;
+    line-height: 1.3;
+    font-family: var(--main-heading);
+    padding-right: 1rem;
   }
 
   .about-footer-container {
