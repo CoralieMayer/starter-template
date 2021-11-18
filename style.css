@@ -187,7 +187,7 @@ a:hover {
   /* horizontal */
   max-width: 90vw;
   min-height: 10vh;
-  
+  background: pink;
 }
 
 .navigation-button {
@@ -760,35 +760,7 @@ a:hover {
   }
 
   .project-navigation-buttons {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    /* vertical */
-    justify-content: center;
-    /* horizontal */
-    max-width: 90vw;
-    min-height: 7vh;
-    max-height: 8vh;
-    
-  }
-  }
-
-  .navigation-button {
-    margin-right: .3rem;
-    text-transform: uppercase;
-    font-size: 1.3rem;
-  }
-  
-  .navigation-button-link {
-    border: 1.2px solid var(--button-border-color);
-    border-radius: 2em;
-    padding: 0rem .7rem;
-  }
-  
-  .navigation-button-link:hover {
-    color: white;
-    text-decoration: none;
-    background: black;
+    max-width: 65vw;
   }
 
   .hero-headline-wrapper {
