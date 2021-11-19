@@ -116,6 +116,7 @@ p {
   line-height: 1.3;
   font-family: 'vremena_groteskbook';
   padding-right: 1rem;
+  padding-bottom: 3vh;
 }
 
 /* Hyperlink Styles */
@@ -313,7 +314,6 @@ a:hover {
   width: 100%;
   padding-top: 2rem;
   padding-left: 2.3rem;
-
 }
 
 .global-footer-bio {
@@ -367,6 +367,7 @@ a:hover {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
+  justify-content: flex-start;
 }
 
 .header-menu-item {
@@ -436,7 +437,7 @@ a:hover {
 }
 
 .header-spacing {
-  padding-top: .8rem;
+  padding-top: .2rem;
   padding-right: 1rem;
   padding-left: 1rem;
   padding-bottom: 1.7rem; 
@@ -446,8 +447,8 @@ a:hover {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
-  padding: .875em 0;
+  align-items: flex-start;
+  padding: 1.2em 0 2em;
   border-top: 1px solid black;
 }
 
@@ -668,22 +669,21 @@ a:hover {
 
 .about-details {
   margin-top: 2rem;
-  margin-bottom: .5rem;
-  line-height: 1.4em;
 }
 
 .education,
 .experience {
   width: 100%;
+  margin-top: 1rem;
 }
 
 .employment-position {
-  margin-bottom: .5rem;
   line-height: 1.4em;
+  font-size: 1.2em;
 }
 
 .education {
-  margin-right: 3rem;
+  margin-top: 0rem;
 }
 
 .awards-recognition {
@@ -698,7 +698,7 @@ a:hover {
   justify-content: flex-start;
   /* horizontal */
   max-width: 100%;
-  min-height: 10vh;
+  margin-top: 2.5rem;
 }
 
 
@@ -714,7 +714,6 @@ a:hover {
 .photo-hover {
   display: none;
 }
-
 
 
 /*
@@ -785,7 +784,7 @@ a:hover {
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
-  margin-top:  ;
+  margin-top:  0;
   border-top: 1px solid black;
 }
 
@@ -868,7 +867,7 @@ a:hover {
   }
 
   .work-header {
-    padding-top: 2em;
+    padding-top: 4.5rem;
     
   }
 
@@ -882,7 +881,7 @@ a:hover {
 
   .hero-headline {
     font-size: 3em;
-    padding-top: 6.5vh;
+    padding-top: 6vh;
     transform: scale(1.2);
   }
   
@@ -975,8 +974,7 @@ a:hover {
       height: 17vh;
       padding-top: 0;
       padding-left: 0;
-    
-    
+      justify-content: center;
   }
 
   .global-footer-bio {
@@ -1018,35 +1016,53 @@ a:hover {
     display: flex;
     flex-direction: row;
     width: 100%;
-    
+    height: 70vh;
   }
 
   .about-content-container {
     width: 60%;
-    padding: 5rem;
+    padding-left: 3vw;
+    padding-bottom:2rem;
+    height: 70vh;
+    justify-content: center;
   }
 
   .about-bio {
-    padding-right: 5rem;
-    margin-bottom: 7rem;
+    padding-right: 5vw;
+    margin-bottom: 7vh;
   }
 
   .about-footer-container {
     flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
   }
 
   .education,
   .experience {
     width: 50%;
+    margin-top: 0;
+    padding-right: 3vw;
+  }
+
+  .awards-recognition {
+    margin-top: 0;
+    padding-left: 3vw; 
   }
 
   .about-photo-container {
-    width: 40%;
-    min-height: 100vh;
+    width: 35%;
+    max-height: 70vh;
     position: relative;
     display: inline-block;
-    padding: 0.5rem;
+    padding-left: 3vw;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    justify-content: center;
   }
+
+
 
   .photo-hover {
     display: none;
@@ -1054,7 +1070,7 @@ a:hover {
     top: 0;
     left: 0;
     z-index: 1;
-    padding: 0.5rem;
+    padding-left: 3vw;
   }
 
   .about-photo-container:hover .photo-hover {
