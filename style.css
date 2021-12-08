@@ -34,7 +34,7 @@ body {
   --hover-color: #ff0000;
   --page-background-color: #ffffff;
   --button-border-color: #000000;
-  --title-bloc: #0b00a8;
+  --title-bloc: #002657;
   --title-bruit: #df19a3;
   --title-inbetween: #02a67b;
   --title-radio: #f71515;
@@ -97,7 +97,7 @@ h3 {
 
 h4 {
   font-family: 'freighttextfreighttextproBkIt';
-  font-size: 1.35em;
+  font-size: 1.1em;
   line-height: 1.25em;
   margin-bottom: 4rem;
 }
@@ -105,7 +105,7 @@ h4 {
 p {
   margin-bottom: 1em;
   line-height: 1.3;
-  font-size: 1.5em;
+  font-size: 1.2em;
 }
 
 .last-paragraph {
@@ -129,50 +129,58 @@ a {
 
 a:hover {
   color: var(--hover-color);
-  text-decoration: underline;
+  transition: 0.2s ease;
+  /* text-decoration: underline; */
 }
 
 
 .title-bloc {
   color: var(--title-bloc);
-  font-size: 3.5rem;
-  margin-bottom: 1.5rem;
+  font-size: 2.2rem;
+  margin-bottom: 1.6rem;
 }
 
 .title-bruit {
   color: var(--title-bruit);
-  font-size: 3.5rem;
+  font-size: 2.2rem;
+  margin-bottom: 1.6rem;
 }
 
 .title-inbetween {
   color: var(--title-inbetween);
-  font-size: 2.5rem;
+  font-size: 2.2rem;
+  margin-bottom: 1.6rem;
 }
 
 .title-radio {
   color: var(--title-radio);
-  font-size: 3.5rem;
+  font-size: 2.2rem;
+  margin-bottom: 1.6rem;
 }
 
 .title-viktor {
   color: var(--title-viktor);
-  font-size: 3.5rem;
+  font-size: 2.2rem;
+  margin-bottom: 1.6rem;
 }
 
 
 .title-germination {
   color: var(--title-germination);
-  font-size: 3.5rem;
+  font-size: 2.2rem;
+  margin-bottom: 1.6rem;
 }
 
 .title-blue-summer {
   color: var(--title-blue-summer);
-  font-size: 3.5rem;
+  font-size: 2.2rem;
+  margin-bottom: 1.6rem;
 }
 
 .title-editorials {
   color: var(--title-editorials);
-  font-size: 3.5rem;
+  font-size: 2.2rem;
+  margin-bottom: 1.6rem;
 }
 
 /*404 layout */
@@ -288,12 +296,14 @@ a:hover {
 /* Global and Mobile Footer Styles */
 
 .brand-icon-wrapper {
+  transform: scale(80%);
   width: 100%;
   height: 15vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  
 }
 
 .brand-icon {
@@ -379,11 +389,12 @@ a:hover {
   flex-direction: row;
   align-items: flex-start;
   justify-content: flex-start;
+
 }
 
 .header-menu-item {
-  padding-left: 1rem;
-  font-size: 1.3rem;
+  padding-left: 2rem;
+  font-size: 1.1rem;
 }
 
 .footer-navigation {
@@ -448,7 +459,7 @@ a:hover {
 }
 
 .header-spacing {
-  padding-top: .2rem;
+  padding-top: 0.8rem;
   padding-right: 1rem;
   padding-left: 1rem;
   padding-bottom: 1.7rem; 
@@ -459,7 +470,7 @@ a:hover {
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
-  padding: 1.2em 0 2em;
+  padding: 1em 0 0em;
   border-top: 1px solid black;
 }
 
@@ -751,7 +762,7 @@ a:hover {
   p {
     margin-bottom: 1.5rem;
     line-height: 1.3;
-    font-size: 1.35em;
+    font-size: 1.16em;
   }
 
   .title-bloc {
