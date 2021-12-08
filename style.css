@@ -40,6 +40,8 @@ body {
   --title-radio: #f71515;
   --title-viktor: #ffe600;
   --title-germination: #f3ca14;
+  --title-blue-summer: #5388CF;
+  --title-editorials: #2A3078; 
 }
 
 
@@ -160,6 +162,16 @@ a:hover {
 
 .title-germination {
   color: var(--title-germination);
+  font-size: 3.5rem;
+}
+
+.title-blue-summer {
+  color: var(--title-blue-summer);
+  font-size: 3.5rem;
+}
+
+.title-editorials {
+  color: var(--title-editorials);
   font-size: 3.5rem;
 }
 
@@ -353,8 +365,7 @@ a:hover {
   padding: 1rem;
   text-align: center;
 }
-
-.hero-image {}
+ß
 
 .header-navigation-item {
   width: 50vw;
@@ -524,12 +535,12 @@ a:hover {
 
 
 .hero-blob {
-  background: linear-gradient(to right, #FC6387, #FD0100, #FC6387, #FDC7CF);
+  background-image: linear-gradient(to right, #FC6387, #FD0100, #FC6387, #FDC7CF);
   width: 100%;
   min-height: 120vh;
   animation: blob 15s linear alternate infinite, 100s alternate infinite;
   margin-top: 13vh;
-  filter: blur(90px);
+  filter: blur(50px);
   margin-bottom: -60vh;
   position: absolute;
   top: 0;
@@ -547,33 +558,37 @@ a:hover {
 /* Frames for the blog */
 /* Fancy CSS Blob Generator https://9elements.github.io/fancy-border-radius/ */
 
-/* @keyframes blob {
+@keyframes blob {
   0% {
-    border-radius: 71% 29% 41% 59% / 60% 49% 51% 40%;
+    border-radius: 50% 50% 70% 30% / 44% 43% 57% 56%;
+    transition: background-image 0.5s ease;
+    background-image: linear-gradient(to right, #FC6387, #FD0100, #FC6387, #FDC7CF);
   }
 
   20% {
-    border-radius: 50% 40% 50% / 40% 50% 40%;
+    border-radius: 50% 50% 14% 86% / 44% 33% 67% 56%;
+    transition: background-image 0.3s ease;
+    background-image: linear-gradient(to right, #FC6387, #f5fd00, #fc63c6, #FDC7CF);
   }
 
-  40% {
+  /* 40% {
     border-radius: 40% 50% 90% / 50% 40% 50%;
-  }
+  } */
 
   60% {
-    border-radius: 30% 70% 70% 30% / 42% 30% 70% 58%;
+    border-radius: 34% 66% 14% 86% / 44% 33% 67% 56%;
   }
 
   80% {
-    border-radius: 90% 50% 40% / 50% 40% 50%;
+    border-radius: 42% 58% 14% 86% / 44% 25% 75% 56%;
   }
 
   100% {
     border-radius: 50% 40% 50% / 40% 50% 40%;
   }
-} */
+}
 
-@keyframes blob {
+/* @keyframes blob {
   0% {
     border-radius: 46% 48% 0% 0% / 86% 83% 0% 0%;
   }
@@ -597,7 +612,7 @@ a:hover {
   100% {
     border-radius: 50% 52% 0% 0% / 59% 59% 0% 0%;
   }
-}
+} */
 
 
 
@@ -776,6 +791,18 @@ a:hover {
     margin-bottom: 3rem;
   }
 
+  .title-blue-summer {
+    color: var(--title-blue-summer);
+    font-size: 2.5rem;
+    margin-bottom: 3rem; 
+  }
+
+  .title-editorials {
+    color: var(--title-editorials);
+    font-size: 2.5rem;
+    margin-bottom: 3rem; 
+  }
+
 
 /*header styles*/
 
@@ -847,7 +874,7 @@ a:hover {
   }
 
   .hero-blob {
-    background: linear-gradient(to right, #FC6387, #FD0100, #FC6387, #FDC7CF);
+    background-color: linear-gradient(to right, #FC6387, #FD0100, #FC6387, #FDC7CF);
     width: 100%;
     min-height: 120vh;
     animation: blob 15s linear alternate infinite, 100s alternate infinite;
