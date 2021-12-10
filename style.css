@@ -9,12 +9,7 @@ html {
   scroll-behavior: smooth;
 }
 
-html, body {
-  overflow-x: hidden;
-}
-body {
-  position: relative
-}
+
 
 *,
 *:before,
@@ -41,7 +36,14 @@ body {
   --title-viktor: #ffe600;
   --title-germination: #f3ca14;
   --title-blue-summer: #5388CF;
-  --title-editorials: #2A3078; 
+  --title-editorials: #2A3078;
+  --gradient: linear-gradient(45deg,
+      #FC6387,
+      #FD0100,
+      #FC6387,
+      #FDC7CF,
+      #FC6387);
+
 }
 
 
@@ -226,9 +228,9 @@ a:hover {
   justify-content: center;
   /* horizontal */
   max-width: 90vw;
- padding-top: 1.5rem; 
-  
-  
+  padding-top: 1.5rem;
+
+
 }
 
 .navigation-button {
@@ -303,7 +305,7 @@ a:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  
+
 }
 
 .brand-icon {
@@ -375,13 +377,12 @@ a:hover {
   padding: 1rem;
   text-align: center;
 }
-ß
 
 .header-navigation-item {
   width: 50vw;
   display: flex;
   justify-content: center;
-  }
+}
 
 
 .header-menu-wrapper {
@@ -462,7 +463,7 @@ a:hover {
   padding-top: 0.8rem;
   padding-right: 1rem;
   padding-left: 1rem;
-  padding-bottom: 1.7rem; 
+  padding-bottom: 1.7rem;
 }
 
 .branding-navigation {
@@ -520,7 +521,7 @@ a:hover {
 .hero-wrapper {
   position: relative;
   clip-path: inset(0 0 0 0);
-  /* background-color: lightblue; */
+
   min-height: 30vh;
   max-height: 50vh;
   padding-bottom: 2rem;
@@ -545,71 +546,55 @@ a:hover {
 */
 
 
+
 .hero-blob {
-  background-image: linear-gradient(to right, #FC6387, #FD0100, #FC6387, #FDC7CF);
-  width: 100%;
+  background-image: var(--gradient);
+  animation: mobile-blob-animation 10s infinite alternate;
+  background-size: 300%;
   min-height: 120vh;
-  animation: blob 15s linear alternate infinite, 100s alternate infinite;
-  margin-top: 13vh;
-  filter: blur(50px);
-  margin-bottom: -60vh;
+  filter: blur(40px);
+  /* animation: blob 10s linear alternate infinite; */
+  /* animation: blob 15s linear alternate infinite, 100s alternate infinite; */
   position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  transform: scaleY(1);
-  transform: scaleX(2.5);
+  top: -20vh;
+  right: -20vw;
+  bottom: -20vh;
+  left: -20vw;
+  width: 140vw;
+  /* transform: scaleY(.6); */
   /* opacity: 0.8; */
   z-index: -100;
-  /* for demo purpose  */
-
 }
 
 /* Frames for the blog */
 /* Fancy CSS Blob Generator https://9elements.github.io/fancy-border-radius/ */
 
-@keyframes blob {
+
+
+@keyframes desktop-blob-animation {
   0% {
-    border-radius: 50% 50% 70% 30% / 44% 43% 57% 56%;
-    transition: background-image 0.5s ease;
-    background-image: linear-gradient(to right, #FC6387, #FD0100, #FC6387, #FDC7CF);
-  }
+    /* border-radius: 46% 48% 0% 0% / 86% 83% 0% 0%; */
+    border-radius: 54% 46% 62% 38% / 51% 46% 54% 49%;
+    background-position: 0%;
+    margin-top: 50vh;
+    margin-bottom: -50vh;
 
-  20% {
-    border-radius: 50% 50% 14% 86% / 44% 33% 67% 56%;
-    transition: background-image 0.3s ease;
-    background-image: linear-gradient(to right, #FC6387, #f5fd00, #fc63c6, #FDC7CF);
-  }
-
-  /* 40% {
-    border-radius: 40% 50% 90% / 50% 40% 50%;
-  } */
-
-  60% {
-    border-radius: 34% 66% 14% 86% / 44% 33% 67% 56%;
-  }
-
-  80% {
-    border-radius: 42% 58% 14% 86% / 44% 25% 75% 56%;
-  }
-
-  100% {
-    border-radius: 50% 40% 50% / 40% 50% 40%;
-  }
-}
-
-/* @keyframes blob {
-  0% {
-    border-radius: 46% 48% 0% 0% / 86% 83% 0% 0%;
   }
 
   20% {
     border-radius: 50% 50% 0% 0% / 56% 52% 0% 0%;
+    background-position: 50%;
   }
 
   40% {
     border-radius: 50% 50% 0% 0% / 53% 56% 0% 0%;
+    background-position: 100%;
+  }
+
+  50% {
+    border-radius: 88% 12% 80% 20% / 59% 42% 58% 41%;
+    margin-top: 80vh;
+
   }
 
   60% {
@@ -618,15 +603,20 @@ a:hover {
 
   80% {
     border-radius: 49% 51% 0% 0% / 51% 54% 0% 0%;
+    background-position: 20%;
   }
 
   100% {
     border-radius: 50% 52% 0% 0% / 59% 59% 0% 0%;
+    background-position: 0%;
+    margin-top: 50vh;
+    margin-bottom: -50vh;
+
   }
-} */
+}
 
 
-
+@keyframes mobile-blob-animation {}
 
 
 /* Project Page
@@ -770,32 +760,32 @@ a:hover {
     font-size: 2.5rem;
     margin-bottom: 3rem;
   }
-  
+
   .title-bruit {
     color: var(--title-bruit);
     font-size: 2.5rem;
     margin-bottom: 3rem;
   }
-  
+
   .title-inbetween {
     color: var(--title-inbetween);
     font-size: 2.5rem;
     margin-bottom: 3rem;
   }
-  
+
   .title-radio {
     color: var(--title-radio);
     font-size: 2.5rem;
     margin-bottom: 3rem;
   }
-  
+
   .title-viktor {
     color: var(--title-viktor);
     font-size: 2.5rem;
     margin-bottom: 3rem;
   }
-  
-  
+
+
   .title-germination {
     color: var(--title-germination);
     font-size: 2.5rem;
@@ -805,44 +795,44 @@ a:hover {
   .title-blue-summer {
     color: var(--title-blue-summer);
     font-size: 2.5rem;
-    margin-bottom: 3rem; 
+    margin-bottom: 3rem;
   }
 
   .title-editorials {
     color: var(--title-editorials);
     font-size: 2.5rem;
-    margin-bottom: 3rem; 
+    margin-bottom: 3rem;
   }
 
 
-/*header styles*/
+  /*header styles*/
 
-.branding-navigation {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: flex-start;
-  margin-top:  0;
-  border-top: 1px solid black;
-}
+  .branding-navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 0;
+    border-top: 1px solid black;
+  }
 
-.header-menu-item {
-  padding-top: .3rem;
-  padding-left: 2rem;
-}
+  .header-menu-item {
+    padding-top: .3rem;
+    padding-left: 2rem;
+  }
 
-.header-navigation-item {
-  width: 50vw;
-}
+  .header-navigation-item {
+    width: 50vw;
+  }
 
-.corner-logo {
-  margin-top: 0rem;
-  transform: scale(1);
-}
+  .corner-logo {
+    margin-top: 0rem;
+    transform: scale(1);
+  }
 
-.header-menu-wrapper {
-  flex-direction: row;
-}
+  .header-menu-wrapper {
+    flex-direction: row;
+  }
 
   .hero {
     max-height: 100vh;
@@ -851,8 +841,8 @@ a:hover {
     flex-direction: column;
     padding-top: 1rem;
     padding-right: 2rem;
-  padding-left: 2rem;
-  padding-bottom: 4rem;
+    padding-left: 2rem;
+    padding-bottom: 4rem;
     /* This is the padding of the entire hero section */
     width: 100%;
   }
@@ -861,7 +851,7 @@ a:hover {
     padding-top: .8rem;
     padding-right: 2rem;
     padding-left: 2rem;
-    padding-bottom: 2rem; 
+    padding-bottom: 2rem;
   }
 
 
@@ -875,38 +865,40 @@ a:hover {
     /* max-height: 100vh; */
     /* padding-bottom: 2rem; */
     /* constrains the blob | to increase or decrease white space around it, use hero padding, not hero-wrapper */
-  
+
   }
-  
+
   .down-arrow {
     margin-top: 15vh;
     transform: scale(1.3);
-    
+
   }
 
   .hero-blob {
-    background-color: linear-gradient(to right, #FC6387, #FD0100, #FC6387, #FDC7CF);
-    width: 100%;
+    background-image: var(--gradient);
+    animation: desktop-blob-animation 10s infinite alternate;
+    background-size: 300%;
     min-height: 120vh;
-    animation: blob 15s linear alternate infinite, 100s alternate infinite;
-    margin-top: 5vh;
-    filter: blur(150px);
-    margin-bottom: -60vh;
+    /* animation: blob 10s linear alternate infinite; */
+    /* animation: blob 15s linear alternate infinite, 100s alternate infinite; */
     position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    transform: scaleY(.6);
+    top: -20vh;
+    right: -20vw;
+    bottom: -20vh;
+    left: -20vw;
+    width: 140vw;
+    /* transform: scaleY(.6); */
     /* opacity: 0.8; */
     z-index: -100;
-    /* for demo purpose  */
-  
   }
+
+
+
+
 
   .work-header {
     padding-top: 4.5rem;
-    
+
   }
 
   .project-navigation-buttons {
@@ -922,7 +914,7 @@ a:hover {
     padding-top: 6vh;
     transform: scale(1.2);
   }
-  
+
 
   .project-wrapper {
     flex-direction: row;
@@ -978,7 +970,7 @@ a:hover {
     align-items: center;
     margin-bottom: -43vh;
     margin-top: 15vh;
-  
+
   }
 
   .brand-icon {
@@ -1008,11 +1000,11 @@ a:hover {
   }
 
   .global-footer-branding {
-      max-width: 30vw;
-      height: 17vh;
-      padding-top: 0;
-      padding-left: 0;
-      justify-content: center;
+    max-width: 30vw;
+    height: 17vh;
+    padding-top: 0;
+    padding-left: 0;
+    justify-content: center;
   }
 
   .global-footer-bio {
@@ -1027,7 +1019,7 @@ a:hover {
     width: 100%;
     padding-right: 0;
 
-    
+
   }
 
   .global-footer-social {
@@ -1060,7 +1052,7 @@ a:hover {
   .about-content-container {
     width: 60%;
     padding-left: 3vw;
-    padding-bottom:2rem;
+    padding-bottom: 2rem;
     height: 70vh;
     justify-content: center;
   }
@@ -1085,7 +1077,7 @@ a:hover {
 
   .awards-recognition {
     margin-top: 0;
-    padding-left: 3vw; 
+    padding-left: 3vw;
   }
 
   .about-photo-container {
