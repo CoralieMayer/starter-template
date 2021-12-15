@@ -610,7 +610,6 @@ a:hover {
     background-position: 0%;
     margin-top: 50vh;
     margin-bottom: -50vh;
-
   }
 
   20% {
@@ -648,7 +647,48 @@ a:hover {
 }
 
 
-@keyframes mobile-blob-animation {}
+@keyframes mobile-blob-animation {
+  0% {
+    /* border-radius: 46% 48% 0% 0% / 86% 83% 0% 0%; */
+    border-radius: 54% 46% 62% 38% / 51% 46% 54% 49%;
+    background-position: 0%;
+    margin-top: 50vh;
+    margin-bottom: -50vh;
+  }
+
+  20% {
+    border-radius: 50% 50% 0% 0% / 56% 52% 0% 0%;
+    background-position: 50%;
+  }
+
+  40% {
+    border-radius: 50% 50% 0% 0% / 53% 56% 0% 0%;
+    background-position: 100%;
+  }
+
+  50% {
+    border-radius: 88% 12% 80% 20% / 59% 42% 58% 41%;
+    margin-top: 80vh;
+
+  }
+
+  60% {
+    border-radius: 54% 52% 0% 0% / 50% 56% 0% 0%;
+  }
+
+  80% {
+    border-radius: 49% 51% 0% 0% / 51% 54% 0% 0%;
+    background-position: 20%;
+  }
+
+  100% {
+    border-radius: 50% 52% 0% 0% / 59% 59% 0% 0%;
+    background-position: 0%;
+    margin-top: 50vh;
+    margin-bottom: -50vh;
+
+  }
+}
 
 
 /* Project Page
