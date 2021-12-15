@@ -229,6 +229,7 @@ a:hover {
   /* horizontal */
   max-width: 90vw;
   padding-top: 1.5rem;
+  margin-bottom: 2rem;
 
 
 }
@@ -253,29 +254,37 @@ a:hover {
 }
 
 
-/* Delete this when all the images are in */
-.project-preview {
-  display: flex;
-  padding-right: 2rem;
-  padding-left: 2rem;
-  padding-top: 4rem;
-  align-items: center;
-  justify-content: center;
-  -webkit-filter: grayscale(0%);
-  -moz-filter: grayscale(0%);
-  filter: grayscale(0%);
+
+/* Defining the work page grid */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  grid-gap: 2rem;
 }
 
-.project-preview:hover {
+.project-preview {
   display: flex;
-  padding-right: 2rem;
+  /* padding-right: 2rem;
   padding-left: 2rem;
-  padding-top: 4rem;
+  padding-top: 4rem; */
   align-items: center;
   justify-content: center;
+
   -webkit-filter: grayscale(100%);
   -moz-filter: grayscale(100%);
   filter: grayscale(100%);
+}
+
+
+
+.project-preview:hover {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  -webkit-filter: grayscale(0%);
+  -moz-filter: grayscale(0%);
+  filter: grayscale(0%);
   transition: all 0.5s ease;
 }
 
@@ -457,6 +466,7 @@ a:hover {
   padding-bottom: 2rem;
   /* This is the padding of the entire hero section */
   width: 100%;
+
 }
 
 .header-spacing {
@@ -487,20 +497,21 @@ a:hover {
 }
 
 .hero-headline-wrapper {
+  width: 60%;
+  /* Increase or decrease this box to size your hero wordmark */
   z-index: 100;
   display: flex;
   flex: 1;
   align-items: center;
-  justify-content: center;
-  padding: 2em 4em;
+  justify-content: space-between;
   text-align: center;
   flex-direction: column;
 }
 
 .hero-headline {
-  font-size: 3em;
+  /* font-size: 3em;
   padding-top: 1.5vh;
-  transform: scale(1.1);
+  transform: scale(1.1); */
 }
 
 
@@ -518,21 +529,41 @@ a:hover {
 
 */
 
+.hero-header {
+  height: 15vh;
+  /* hero-header height + hero-wrapper height must equal 100vh */
+
+}
+
 .hero-wrapper {
   position: relative;
   clip-path: inset(0 0 0 0);
-
-  min-height: 30vh;
-  max-height: 50vh;
-  padding-bottom: 2rem;
+  overflow: hidden;
+  /* Need this to prevent horiztonal scroll caused by the blob size */
+  height: 85vh;
   /* constrains the blob | to increase or decrease white space around it, use hero padding, not hero-wrapper */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 
 }
 
 
+.down-arrow-wrapper {
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+  /* Space below down arrow */
+}
+
 .down-arrow {
-  margin-top: 6vh;
-  transform: scale(.65);
+
+  width: 10rem;
+  /* Increase or decrease this to size your down arrow */
 }
 
 /*
@@ -826,8 +857,8 @@ a:hover {
   }
 
   .corner-logo {
-    margin-top: 0rem;
-    transform: scale(1);
+    /* margin-top: 0rem;
+    transform: scale(1); */
   }
 
   .header-menu-wrapper {
@@ -835,14 +866,13 @@ a:hover {
   }
 
   .hero {
-    max-height: 100vh;
-    min-height: 90vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     padding-top: 1rem;
     padding-right: 2rem;
     padding-left: 2rem;
-    padding-bottom: 4rem;
+    padding-bottom: 2rem;
     /* This is the padding of the entire hero section */
     width: 100%;
   }
@@ -855,24 +885,7 @@ a:hover {
   }
 
 
-  .hero-wrapper {
-    position: relative;
-    clip-path: inset(0 0 0 0);
-    padding-bottom: 4rem;
-    min-height: 87vh;
-    max-height: 90vh;
-    /* margin-bottom: 2em; */
-    /* max-height: 100vh; */
-    /* padding-bottom: 2rem; */
-    /* constrains the blob | to increase or decrease white space around it, use hero padding, not hero-wrapper */
 
-  }
-
-  .down-arrow {
-    margin-top: 15vh;
-    transform: scale(1.3);
-
-  }
 
   .hero-blob {
     background-image: var(--gradient);
@@ -906,13 +919,13 @@ a:hover {
   }
 
   .hero-headline-wrapper {
-    padding: 4em 8em;
+    /* padding: 4em 8em; */
   }
 
   .hero-headline {
-    font-size: 3em;
-    padding-top: 6vh;
-    transform: scale(1.2);
+    /* font-size: 3em; */
+    /* padding-top: 6vh;
+    transform: scale(1.2); */
   }
 
 
