@@ -37,12 +37,16 @@ html {
   --title-germination: #f3ca14;
   --title-blue-summer: #5388CF;
   --title-editorials: #2A3078;
-  --gradient: linear-gradient(45deg,
-      #FC6387,
-      #FD0100,
-      #FC6387,
+  --gradient: linear-gradient(45deg, 
       #FDC7CF,
-      #FC6387);
+      #FC6387,
+      #E302B1,
+      #FD0100,
+      #FE3E34,
+      #E302B1,
+
+      #FC6387,
+      #FDC7CF);
 
 }
 
@@ -229,7 +233,7 @@ a:hover {
   /* horizontal */
   max-width: 90vw;
   padding-top: 1.5rem;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
 
 
 }
@@ -498,7 +502,7 @@ a:hover {
 }
 
 .hero-headline-wrapper {
-  width: 60%;
+  width: 70%;
   /* Increase or decrease this box to size your hero wordmark */
   z-index: 100;
   display: flex;
@@ -509,11 +513,9 @@ a:hover {
   flex-direction: column;
 }
 
-.hero-headline {
-  /* font-size: 3em;
-  padding-top: 1.5vh;
-  transform: scale(1.1); */
-}
+/* .hero-headline {
+  
+} */
 
 
 /* Hero
@@ -557,12 +559,12 @@ a:hover {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-bottom: 2rem;
+  margin-bottom: 5rem;
   /* Space below down arrow */
 }
 
 .down-arrow {
-  width: 6rem;
+  width: 10vw;
   /* Increase or decrease this to size your down arrow */
 }
 
@@ -604,43 +606,64 @@ a:hover {
 
 @keyframes desktop-blob-animation {
   0% {
-    /* border-radius: 46% 48% 0% 0% / 86% 83% 0% 0%; */
-    border-radius: 54% 46% 62% 38% / 51% 46% 54% 49%;
+    border-radius: 50% 50% 48% 52% / 72% 69% 31% 28%;
     background-position: 0%;
-    margin-top: 50vh;
-    margin-bottom: -50vh;
+    margin-top: 35vh;
+    margin-bottom: -65vh;
   }
 
+  /* 10% {
+    border-radius: 55% 45% 46% 54% / 41% 41% 59% 59%;
+    background-position: 25%;
+  } */
+
   20% {
-    border-radius: 50% 50% 0% 0% / 56% 52% 0% 0%;
+    border-radius: 61% 39% 48% 52% / 72% 60% 40% 28%;
     background-position: 50%;
   }
 
+  /* 30%{
+    border-radius: 64% 36% 46% 54% / 58% 58% 42% 42%;
+    background-position: 75%;
+  } */
+
   40% {
-    border-radius: 50% 50% 0% 0% / 53% 56% 0% 0%;
+    border-radius: 48% 52% 100% 0% / 41% 50% 50% 59%;
     background-position: 100%;
+
   }
 
   50% {
-    border-radius: 88% 12% 80% 20% / 59% 42% 58% 41%;
-    margin-top: 80vh;
+    border-radius: 61% 39% 100% 0% / 21% 50% 50% 79% ;
+    margin-top: 60vh;
 
   }
 
   60% {
-    border-radius: 54% 52% 0% 0% / 50% 56% 0% 0%;
+    border-radius: 41% 59% 48% 52% / 34% 46% 54% 66%;
+    background-position: 100%;
   }
+
+  /* 70% {
+    border-radius: 38% 62% 46% 54% / 58% 58% 42% 42% ;
+    background-position: 75%;
+  } */
 
   80% {
-    border-radius: 49% 51% 0% 0% / 51% 54% 0% 0%;
-    background-position: 20%;
+    border-radius: 63% 37% 100% 0% / 41% 50% 50% 59% ;
+    background-position: 50%;
   }
 
+  /* 90% {
+    border-radius: 39% 61% 46% 54% / 41% 41% 59% 59% ;
+    background-position: 25%;
+  } */
+
   100% {
-    border-radius: 50% 52% 0% 0% / 59% 59% 0% 0%;
+    border-radius: 49% 51% 48% 52% / 53% 52% 48% 47%;
     background-position: 0%;
-    margin-top: 50vh;
-    margin-bottom: -50vh;
+    margin-top: 40vh;
+    margin-bottom: -60vh;
 
   }
 }
@@ -936,6 +959,7 @@ a:hover {
     animation: desktop-blob-animation 10s infinite alternate;
     background-size: 300%;
     min-height: 120vh;
+    filter: blur(50px);
     /* animation: blob 10s linear alternate infinite; */
     /* animation: blob 15s linear alternate infinite, 100s alternate infinite; */
     position: absolute;
@@ -948,6 +972,7 @@ a:hover {
     /* opacity: 0.8; */
     z-index: -100;
   }
+  
 
 
   /* Work page grid for large devices */
@@ -956,11 +981,13 @@ a:hover {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
     grid-gap: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 
 
   .work-header {
-    padding-top: 4.5rem;
+    padding-top: 2.5rem;
 
   }
 
@@ -1032,9 +1059,8 @@ a:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: -43vh;
+    margin-bottom: -50vh;
     margin-top: 15vh;
-
   }
 
   .brand-icon {
