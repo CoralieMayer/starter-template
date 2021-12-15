@@ -255,11 +255,12 @@ a:hover {
 
 
 
-/* Defining the work page grid */
+/* Defining the work page grid for mobile */
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-gap: 2rem;
+
 }
 
 .project-preview {
@@ -856,10 +857,7 @@ a:hover {
     width: 50vw;
   }
 
-  .corner-logo {
-    /* margin-top: 0rem;
-    transform: scale(1); */
-  }
+
 
   .header-menu-wrapper {
     flex-direction: row;
@@ -906,7 +904,13 @@ a:hover {
   }
 
 
+  /* Work page grid for large devices */
 
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    grid-gap: 2rem;
+  }
 
 
   .work-header {
