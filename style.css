@@ -504,7 +504,7 @@ a:hover {
   display: flex;
   flex: 1;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   text-align: center;
   flex-direction: column;
 }
@@ -562,8 +562,7 @@ a:hover {
 }
 
 .down-arrow {
-
-  width: 10rem;
+  width: 6rem;
   /* Increase or decrease this to size your down arrow */
 }
 
@@ -588,7 +587,7 @@ a:hover {
   /* animation: blob 10s linear alternate infinite; */
   /* animation: blob 15s linear alternate infinite, 100s alternate infinite; */
   position: absolute;
-  top: -20vh;
+  top: -40vh;
   right: -20vw;
   bottom: -20vh;
   left: -20vw;
@@ -915,6 +914,13 @@ a:hover {
     width: 100%;
   }
 
+  .down-arrow {
+    width: 10rem;
+    /* Increase or decrease this to size your down arrow */
+  }
+
+
+
   .header-spacing {
     padding-top: .8rem;
     padding-right: 2rem;
@@ -963,7 +969,8 @@ a:hover {
   }
 
   .hero-headline-wrapper {
-    /* padding: 4em 8em; */
+
+    justify-content: space-between;
   }
 
   .hero-headline {
@@ -1178,9 +1185,11 @@ a:hover {
 /* Extra large devices (large desktops, 1200px and up) */
 
 @media (min-width: 1200px) {
-  body {
-    background: var(--page-background-color);
-  }
+
+
+  /*Adjustments for extra large screens */
+
+
 
 
 }
